@@ -22,8 +22,12 @@ const PeopleDetails = () => {
         <div className='col-md-6'>
             <div className='card shadow rounded my-4'>
                 <div className='card-body'>
-                    <h4 className='card-title'>{details.name}</h4>
-                    <Link to="/people">Go Back</Link>
+                    <h2 className='card-title'>{details.name}</h2> <br />
+                    <b>Gender:</b> {details.gender} <hr />
+                    <b>Age:</b> {details.age} <hr />
+                    <b>Eye Color:</b> {details.eye_color} <hr />
+                    <b>Hair Color:</b> {details.hair_color} <hr />
+                    <Link className='row justify-content-center' to="/people">Go Back</Link>
                 </div>
             </div>
         </div>

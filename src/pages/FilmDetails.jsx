@@ -23,7 +23,12 @@ const FilmDetails = () => {
             <div className='card shadow rounded my-4'>
                 <div className='card-body'>
                     <h4 className='card-title'>{details.title}</h4>
-                    <Link to="/films">Go Back</Link>
+                    <b>Directed by:</b> {details.director} <hr /> 
+                    <b>Produced by:</b> {details.producer} <hr /> 
+                    <b>Release in:</b> {details.release_date} <hr />
+                    <b>Rotten Tomatoes Score:</b> {details.rt_score} <hr />
+                    <h5><b>Synopsis:</b></h5>{details.description} <br />
+                    <Link className='row justify-content-center' to="/films">Go Back</Link>
                 </div>
             </div>
         </div>
